@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top left, #1e1e1e, #121212);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255, 107, 0, 0.2);
+  text-align: center;
+  width: 400px;
+  animation: fadeIn 1.2s ease;
+}
+
+h1 {
+  color: #ff6b00;
+  margin-bottom: 20px;
+}
+
+input, button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+input {
+  width: 100%;
+  background: rgba(255,255,255,0.2);
+  color: white;
+}
+
+button {
+  background: #ff6b00;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff8533;
+  transform: scale(1.05);
+}
+
+#result {
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.user-table {
+  margin-top: 25px;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.user-table th, .user-table td {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 8px;
+}
+
+.user-table th {
+  color: #ff6b00;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}

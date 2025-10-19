@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Age Finder Pro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎂 Age Finder Pro</h1>
+    <input type="text" id="name" placeholder="Enter your name" />
+    <input type="date" id="dob" />
+    <button onclick="calculateAge()">Find Age</button>
+    <p id="result"></p>
+    <hr style="margin:20px 0; border:0.5px solid rgba(255,255,255,0.1);" />
+    <h3>👥 Users</h3>
+    <button onclick="showUsers()">Show All Users</button>
+    <table id="userTable" class="user-table"></table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
